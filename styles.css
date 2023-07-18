@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* shared Css Styles */
+.primary-text-color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.primary-text-size {
+    color: #534C64;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.fa:hover {
+    cursor: pointer;
+}
+
+/* nav-section starts here */
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 2.5rem 0rem;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-btn {
+    display: inline-flex;
+    gap: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 0.5rem;
+    background: rgba(11, 2, 35, 0.10);
+    font-size: 1rem;
+}
+
+/* banner section starts here */
+
+
+
+
+
+/* resonsive section starts here */
+@media screen and (max-width: 576px) {
+    .nav-container, 
+    .nav-icon, 
+    .nav-menu{
+        flex-direction: column;
+    }
+    .nav-menu{
+        margin-top: 10px;
+    }
+}
