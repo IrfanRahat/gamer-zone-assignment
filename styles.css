@@ -22,6 +22,16 @@
     cursor: pointer;
 }
 
+.primary-btn {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 3rem;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    color: #FFF;
+    font-size: 1rem;
+}
+
+
 /* nav-section starts here */
 .nav-container {
     display: flex;
@@ -67,18 +77,102 @@
 
 /* banner section starts here */
 
+.banner-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('./images/banner-background.png');
+    background-repeat: no-repeat;
+}
 
+.banner-text h3 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.banner-text h1 {
+    /* text-align: center; */
+    font-size: 6.5rem;
+    font-weight: 800;
+}
+
+.banner-text li {
+    text-align: left;
+    list-style: none;
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 1.5rem;
+}
+
+.banner-btn {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #4EC5F7;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.banner-text button {
+    margin: 10px;
+}
 
 
 
 /* resonsive section starts here */
 @media screen and (max-width: 576px) {
-    .nav-container, 
-    .nav-icon, 
-    .nav-menu{
+
+    .nav-container,
+    .nav-icon,
+    .nav-menu {
         flex-direction: column;
     }
-    .nav-menu{
+
+    .nav-menu {
         margin-top: 10px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        background-image: none;
+        text-align: center;
+    }
+
+    .banner-container li {
+        text-align: center;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .banner-text {
+        width: 100%;
+        background-image: url('./images/banner-background.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .banner-container {
+        flex-direction: column-reverse;
+        background-image: none;
+        text-align: center;
+    }
+
+    .banner-text {
+        width: 100%;
+        background-image: url('./images/banner-background.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .banner-container li {
+        text-align: center;
     }
 }
