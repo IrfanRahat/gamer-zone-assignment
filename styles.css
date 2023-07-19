@@ -150,6 +150,48 @@ h1 {
     gap: 1.5rem;
 }
 
+.card{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.play-button{
+    opacity: 0;
+    color: #ffffff;
+}
+.play-text {
+    opacity: 0;
+    color: #F948B2;
+    font-size: 1.5rem;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    border: 2px solid #F948B2;
+}
+
+.card:hover .play-button,
+.card:hover .play-text {
+    opacity: 1;
+}
+
 .card,
 img {
     padding-bottom: 10px;
