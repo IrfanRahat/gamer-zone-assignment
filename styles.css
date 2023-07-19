@@ -61,6 +61,10 @@
     gap: 2rem;
 
 }
+.nav-title:hover{
+    cursor: pointer;
+    color: #0B0223;
+}
 
 .nav-menu li {
     list-style: none;
