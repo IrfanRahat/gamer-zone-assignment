@@ -173,7 +173,7 @@ h1 {
 /* games category section starts here */
 
 .games-category-section {
-    margin: 15rem 0rem;
+    margin: 15rem 0rem 0rem 0rem;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
@@ -199,6 +199,89 @@ h1 {
     border-radius: 3rem;
     padding: 0rem 2rem;
 }
+
+.games-category:hover {
+    border: 1px solid #FF42A5;
+    color: #F948B2;
+    cursor: pointer;
+}
+
+/* footer section starts here */
+footer {
+    background-color: #0B0223;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    padding: 5rem 0rem 2.5rem 0rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.footer-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #FFF;
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.footer-container ul>li:hover {
+    color: #F948B2;
+    cursor: pointer;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem;
+}
+
+.footer-logo i {
+    width: 2.5rem;
+}
+
+.terms-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.terms-list li:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.footer-copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 5rem;
+}
+
 
 
 /* responsive section starts here */
@@ -309,6 +392,11 @@ h1 {
     .games-category>h4 {
         font-size: 5px;
         font-weight: lighter;
+    }
+
+    .terms-list,
+    .footer-container ul {
+        flex-wrap: wrap;
     }
 
 }
