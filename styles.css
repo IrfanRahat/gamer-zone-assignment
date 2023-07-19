@@ -172,31 +172,34 @@ h1 {
 
 /* games category section starts here */
 
-.games-category-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15rem;
-    padding: 8rem;
+.games-category-section {
+    margin: 15rem 0rem;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
-.games-category {
-    width: 16rem;
-    margin: 0px auto;
+.games-category-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 0rem;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
     align-items: center;
-    background-color: white;
-    border-radius: 3.125rem;
+
 }
 
-.games-category,
-img {
-    padding: 0.2rem 1rem;
+.games-category {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-radius: 3rem;
+    padding: 0rem 2rem;
 }
+
 
 /* responsive section starts here */
 
@@ -271,9 +274,46 @@ img {
     .games-desc {
         margin-bottom: 50px;
     }
+
+    .games-category-container {
+        max-width: 425px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding-left: 20px;
+    }
+
+    .games-category-section {
+        margin: 0px;
+    }
+
+    .games-category {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        max-width: 80px;
+        max-height: 100px;
+        background-size: 50% 50%;
+        height: 20px;
+        gap: 10px;
+    }
+
+    .games-category>img {
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+    }
+
+    .games-category>h4 {
+        font-size: 5px;
+        font-weight: lighter;
+    }
+
 }
 
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 577px) and (max-width: 960px) {
     .banner-container {
         flex-direction: column-reverse;
         background-image: none;
