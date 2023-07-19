@@ -61,7 +61,8 @@
     gap: 2rem;
 
 }
-.nav-title:hover{
+
+.nav-title:hover {
     cursor: pointer;
     color: #0B0223;
 }
@@ -212,7 +213,7 @@ h1 {
 
 /* footer section starts here */
 
-footer {
+.footer-section {
     background-color: #0B0223;
 }
 
